@@ -21,7 +21,10 @@ A GitHub repository security baseline: the settings and files every project shou
 - CodeQL results are required. Security alerts of High severity or higher, and error-level alerts, block the merge.
 - The bypass list is empty, so the rules apply to the owner too.
 
-## Proof: a blocked pull request
+## Proof: a blocked pull request 
+
+<img width="746" height="694" alt="image" src="https://github.com/user-attachments/assets/a810ecb1-0be5-460b-8fb2-f3ceb5e1cfd4" />
+
 
 I opened a pull request containing a deliberately insecure file with an SQL injection and a command injection. CodeQL flagged the flaws and the ruleset blocked the merge. The pull request was closed without merging, so the file never reached `main`.
 
